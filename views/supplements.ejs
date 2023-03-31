@@ -1,0 +1,52 @@
+<%- include('./partials/head.ejs') %>
+    <body>
+        <%- include('./partials/nav.ejs') %>
+        <div class="supplementscontent">
+
+            <form action="/supplements" method="POST" class="gameForm"> 
+
+            
+            <b><h2>Supplements List:</h2></b> <br>
+            <% if (theSupplements.length > 0) { %>
+                <% theSupplements.forEach(supplement => { %>
+                    
+                    
+                    <h3 class="supplementtext"><%= supplement.name %> &nbsp; <%= supplement.use%></b></h3>
+                   
+
+                    
+                    <a href="/supplements/<%=supplement.id%>/edit?name=<%=supplement.name%>&use=<%=supplement.use%>">EDIT</a>
+
+                    <a href="/supplements/<%=supplement.id%>/delete?name=<%=supplement.name%>&use=<%=supplement.use%>">DELETE</a>
+
+                    <a href="/supplements/<%=supplement.id%>/replace?name=<%=supplement.name%>&use=<%=supplement.use%>">REPLACE</a>
+                    <br>
+
+                   
+                    
+                    <% }) %>
+            <% } %>
+        </br><b></b><label class="headingForAddingSupplement">Add A New Supplement:</label><b></b></br>
+
+        <label class="inputLable">Sup id:
+            <input type="text" id="id" name="id" value="<%= locals.id %>" required>
+        </label>
+
+        <label class="inputLable">Sup Name:
+            <input type="text" id="name" name="name" value="<%= locals.name %>" required>
+        </label>
+
+        <label class="inputLable">Sup Use:
+            <input type="text" id="name" name="name" value="<%= locals.use %>" required>
+        </label>
+
+        </br>
+
+        <button class="Button">POST</button >
+       
+    
+            </form>
+        </div>
+    </body>
+    <%- include('./partials/foot.ejs') %>
+</html>

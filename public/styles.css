@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+  text-align: center;
+}
+
+.supplementscontent {
+  background: rgb(255, 228, 205);
+  padding: 30px;
+}
+.supplementForm {
+  padding: 10px;
+}
+.supplementForm h2 {
+  font-size: 42px;
+}
+.supplementForm h3 {
+  font-size: 32px;
+}
+
+.supplementForm a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.supplementForm a:hover {
+  text-decoration: underline;
+  background-color: lightgrey;
+}
+
+.supplementtext {
+  padding-top: 20px;
+}
+
+nav {
+  height: 80px;
+  background: #4456d8;
+}
+
+nav h1 {
+  font-size: 32px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  background-color: lightgrey;
+}
+
+#name,
+#use,
+#id {
+  border-radius: 100px;
+  padding: 10px;
+}
+
+.inputLable {
+  font-size: 24px;
+}
+
+.headingForAddingSupplement {
+  font-size: 24px;
+}
+
+.Button {
+  padding: 10px;
+  background-color: #4456d8;
+  border: 2px solid black;
+  margin-top: 20px;
+}
+
+.Button:hover {
+  background-color: #525050;
+  color: white;
+  cursor: pointer;
+}
+
+.createcontent {
+  background: rgb(255, 228, 205);
+  padding: 30vh;
+  justify-content: center;
+  height: 100vh;
+}
+
+.createcontent2 {
+  background: rgb(255, 228, 205);
+  padding: 30vh;
+  justify-content: center;
+  height: 100vh;
+  color: rgb(0, 0, 0);
+  font-size: 36px;
+}
+
+span {
+  font-size: larger;
+}
+
+footer {
+  background: rgb(255, 228, 205);
+  height: 10vh;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.noData {
+  font-size: 48px;
+}

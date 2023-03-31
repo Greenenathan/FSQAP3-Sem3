@@ -1,0 +1,13 @@
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include('./partials/nav.ejs') %>
+    <div class="createcontent2">
+      <h2>Supplement Found!</h2>
+      <% if (aSupplement.length > 0) var supplement = aSupplement[0];{ %>
+      <h3><%= supplement.name %> <%= supplement.use %></h3>
+      <% } %>
+    </div>
+  </body>
+  <%- include('./partials/foot.ejs') %>
+</html>
