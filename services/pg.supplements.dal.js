@@ -21,7 +21,7 @@ var getSupplements = function () {
           "log",
           "getSupplements())",
           "ERROR",
-          "getSupplements() function has failed  "
+          "getSupplements() function has failed"
         );
         if (DEBUG) console.log(err);
         reject(err);
